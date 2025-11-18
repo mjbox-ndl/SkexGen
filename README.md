@@ -156,3 +156,13 @@ organization={PMLR}
 
 ## License
 Please see the [license](LICENSE) for further details.
+
+
+# 자체 수정사항 사항
+### 준비사항
+1. data 폴더에 데이터 복사 (DeepCAD와 동일함)
+2. conda environment 생성
+```
+conda env create -f environment.yml
+conda activate skexgen
+```

@@ -1,0 +1,28 @@
+name: skexgen
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - python=3.10
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  - numpy
+  - pandas
+  - matplotlib
+  - jupyter
+  - scikit-learn
+  - h5py
+  - tqdm
+  - pip
+  - pip:
+      - protobuf==3.20.3
+      - plyfile==1.1.3
+      - chamfer-distance @ git+https://github.com/otaheri/chamfer_distance@dc9987dcf70888d387d96893ba1fb9ba9a333992
+      - meshio
+      - tensorboard
