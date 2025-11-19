@@ -111,7 +111,7 @@ Random generation:
   python sample.py --sketch_weight proj_log/exp_sketch \
                       --ext_weight proj_log/exp_extrude \
                       --code_weight proj_log/exp_code \
-                      --device 1 --bit 6 \
+                      --device 0 --bit 6 \
                       --output proj_log/samples 
 ```
 
