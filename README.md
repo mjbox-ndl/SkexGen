@@ -167,3 +167,8 @@ Please see the [license](LICENSE) for further details.
 conda env create -f environment.yml
 conda activate skexgen
 ```
+4. 랜더링할때 만약 headless 서버의 경우 아래와 같이 실행해야 함.
+```
+apt-get update && apt-get install -y xvfb
+xvfb-run -a python cad_img.py  --input_dir ../proj_log/samples --output_dir ../proj_log/samples_visual
+```
