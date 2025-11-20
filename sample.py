@@ -106,7 +106,7 @@ def sample(args):
         max_len=10,
         classes=1000,
     )
-    code_model.load_state_dict(torch.load(os.path.join(args.code_weight, 'code_epoch_800.pt')))
+    code_model.load_state_dict(torch.load(os.path.join(args.code_weight, f'code_epoch_{args.code_epoch}.pt')))
     code_model = code_model.to(device).eval()
 
     print('Random Generation...')
@@ -188,6 +188,7 @@ if __name__ == "__main__":
     parser.add_argument("--code_weight", type=str, required=True)
     parser.add_argument("--device", type=int, required=True)
     parser.add_argument("--bit", type=int, required=True)
+    parser.add_argument("--code_epoch", type=int, default=800)
     args = parser.parse_args()
     
     sample(args)

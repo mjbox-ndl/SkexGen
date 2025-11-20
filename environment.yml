@@ -19,6 +19,7 @@ dependencies:
   - scikit-learn
   - h5py
   - tqdm
+  - pythonocc-core=7.9.0
   - pip
   - pip:
       - protobuf==3.20.3
@@ -26,4 +27,4 @@ dependencies:
       - chamfer-distance @ git+https://github.com/otaheri/chamfer_distance@dc9987dcf70888d387d96893ba1fb9ba9a333992
       - meshio
       - tensorboard
-      - pythonocc-core
+      - trimesh==4.9.0

@@ -161,7 +161,8 @@ Please see the [license](LICENSE) for further details.
 # 자체 수정사항 사항
 ### 준비사항
 1. data 폴더에 데이터 복사 (DeepCAD와 동일함)
-2. conda environment 생성
+2. data 폴더에 [test_eval](https://drive.google.com/file/d/1R_Tzourk3XDIDUsnTn_UJVq3uVWe5s38/view?usp=sharing) 파일 꼭 다운받아서 넣어두기
+3. conda environment 생성
 ```
 conda env create -f environment.yml
 conda activate skexgen
